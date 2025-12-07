@@ -1,0 +1,85 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    // CGI header (remove if running as console)
+    cout << "Content-Type: text/html\n\n";
+
+    cout << "<!DOCTYPE html>";
+    cout << "<html lang='en'>";
+    cout << "<head>";
+    cout << "<meta charset='UTF-8'>";
+    cout << "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
+    cout << "<title>Beasty Motors</title>";
+    cout << "<style>";
+    cout << "body { font-family: Arial, sans-serif; margin:0; padding:0; background:#0a0a0a; color:#efefef; }";
+    cout << "header { background:#1a1a1a; padding:25px; text-align:center; font-size:36px; font-weight:bold; letter-spacing:3px; }";
+    cout << "nav { background:#000; padding:12px; text-align:center; }";
+    cout << "nav a { color:#fff; text-decoration:none; margin:15px; font-size:18px; }";
+    cout << "nav a:hover { color:#e60000; }";
+    cout << ".section { padding:50px; text-align:center; }";
+    cout << ".car { background:#111; border:2px solid #333; width:300px; margin:20px auto; padding:20px; }";
+    cout << ".car h3{ color:#e60000; }";
+    cout << ".btn { display:inline-block; padding:10px 20px; background:#e60000; color:#fff; text-decoration:none; border-radius:4px; margin-top:10px; }";
+    cout << ".btn:hover { background:#900000; }";
+    cout << "footer { background:#1a1a1a; text-align:center; padding:15px; font-size:14px; }";
+    cout << "</style>";
+    cout << "</head>";
+
+    cout << "<body>";
+
+    cout << "<header>BEASTY MOTORS</header>";
+
+    // Functional navigation links
+    cout << "<nav>";
+    cout << "<a href='#home'>Home</a>";
+    cout << "<a href='#models'>Models</a>";
+    cout << "<a href='https://www.google.com' target='_blank'>Search Us</a>";
+    cout << "<a href='#contact'>Contact</a>";
+    cout << "</nav>";
+
+    // Home Section
+    cout << "<div id='home' class='section'>";
+    cout << "<h2>Performance, Precision, Power.</h2>";
+    cout << "<p>Welcome to Beasty Motors, where engineering meets adrenaline.</p>";
+    cout << "<a class='btn' href='#models'>Explore Models</a>";
+    cout << "</div>";
+
+    // Models Section
+    cout << "<div id='models' class='section'>";
+    cout << "<h2>Featured Models</h2>";
+
+    cout << "<div class='car'>";
+    cout << "<h3>Beasty GT-X</h3>";
+    cout << "<p>Top Speed: 330 km/h</p>";
+    cout << "<p>0-100 km/h in 2.9 sec</p>";
+    cout << "<a class='btn' href='https://youtu.be/aqz-KE-bpKQ' target='_blank'>View in Action</a>";
+    cout << "</div>";
+
+    cout << "<div class='car'>";
+    cout << "<h3>Beasty Raptor</h3>";
+    cout << "<p>5.0L Twin Turbo V8</p>";
+    cout << "<p>The unstoppable off-road beast.</p>";
+    cout << "<a class='btn' href='https://www.carwale.com/' target='_blank'>Check Competitors</a>";
+    cout << "</div>";
+
+    cout << "</div>";
+
+    // Contact Section
+    cout << "<div id='contact' class='section'>";
+    cout << "<h2>Contact Us</h2>";
+    cout << "<p>Email: support@beastymotors.com</p>";
+    cout << "<a class='btn' href='mailto:support@beastymotors.com'>Send Email</a>";
+    cout << "</div>";
+
+    // Footer
+    cout << "<footer>";
+    cout << "&copy; 2025 Beasty Motors | Built with passion and engineering excellence.";
+    cout << "</footer>";
+
+    cout << "</body>";
+    cout << "</html>";
+
+    return 0;
+}
