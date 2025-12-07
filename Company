@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // HTTP Content Header
+    cout << "Content-Type: text/html\n\n";
+
+    // Begin HTML
+    cout << "<!DOCTYPE html>";
+    cout << "<html lang='en'>";
+    cout << "<head>";
+    cout << "<meta charset='UTF-8'>";
+    cout << "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
+    cout << "<title>Beasty Motors</title>";
+    cout << "<style>";
+    cout << "body { font-family: Arial; margin: 0; padding: 0; background: #111; color: #eee; }";
+    cout << "header { background: #222; padding: 20px; text-align: center; font-size: 28px; letter-spacing: 3px; }";
+    cout << "nav { background: #000; padding: 10px; text-align: center; }";
+    cout << "nav a { color: #eee; margin: 0 15px; text-decoration: none; }";
+    cout << "section { padding: 40px; text-align: center; }";
+    cout << "footer { background: #222; padding: 15px; text-align: center; font-size: 14px; }";
+    cout << ".car-card { background: #000; margin: 20px auto; width: 300px; border: 2px solid #444; padding: 20px; }";
+    cout << "</style>";
+    cout << "</head>";
+
+    cout << "<body>";
+    cout << "<header>BEASTY MOTORS</header>";
+
+    cout << "<nav>";
+    cout << "<a href='#'>Home</a>";
+    cout << "<a href='#'>Models</a>";
+    cout << "<a href='#'>Services</a>";
+    cout << "<a href='#'>Contact</a>";
+    cout << "</nav>";
+
+    cout << "<section>";
+    cout << "<h2>Welcome to Beasty</h2>";
+    cout << "<p>Engineering high-performance vehicles that define power, precision, and presence.</p>";
+
+    cout << "<div class='car-card'>";
+    cout << "<h3>Beasty GT-X</h3>";
+    cout << "<p>Top Speed: 330 km/h</p>";
+    cout << "<p>0-100 km/h: 2.9 sec</p>";
+    cout << "</div>";
+
+    cout << "<div class='car-card'>";
+    cout << "<h3>Beasty Raptor</h3>";
+    cout << "<p>All-Terrain Monster SUV</p>";
+    cout << "<p>Engine: 5.0L V8 Twin Turbo</p>";
+    cout << "</div>";
+
+    cout << "</section>";
+
+    cout << "<footer>";
+    cout << "&copy; 2025 Beasty Motors. All Rights Reserved.";
+    cout << "</footer>";
+
+    cout << "</body>";
+    cout << "</html>";
+
+    return 0;
+}
